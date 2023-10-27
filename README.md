@@ -2,7 +2,7 @@
 
 ## Description
 This repository contains the codebase of the webpage showcasing a collection of web applications developed by Oluwaseun Olusanya.
-The webpage aims to highlights the utilisation of the front-end web development skills and technologies to build high-performant webpages that are user-friendly,
+The webpage aims to highlights the utilisation of a few front-end web development skills and technologies to build high-performant webpages that are user-friendly,
 accessible and responsive.
 
 ## Tools
