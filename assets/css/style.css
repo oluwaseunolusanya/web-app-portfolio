@@ -3,26 +3,40 @@ body {
   padding: 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 5% 20% 20% 40% 10% 5% ;
+  grid-template-areas:
+    "logo-nav"
+    "hero-banner"
+    "about"
+    "work"
+    "contact"
+    "footer";
 }
-  
+
+/* main logo & nav */
 #logo-nav{
+  grid-area: logo-nav;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid;
 }
-  
-  #logo, #subtitle h2{
+
+#logo, #subtitle h2{
   border: 1px solid;
   padding: 5px 10px;
 }
 
-  #nav-bar a{
+#nav-bar a{
   font-weight:bold;
   padding: 10px;
-  }
+  font-size: large;
+}
 
+/* hero banner */
 #hero-banner{
+  grid-area: hero-banner; 
   border-bottom: 1px solid;
   display: flex;
   justify-content: end;
@@ -34,52 +48,86 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding-right: 10px;
 }
 
-#page-wrapper{
-  display: flex;
-  flex-direction: column;
+/* about me */
+#about{
+  grid-area: about;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "about-heading about-content about-image";
 }
 
-.page-section{
-  margin: 10px 0;
-  display: flex;
-  border: 1px solid;
-}
-
-.page-section h2{
+#about-heading{
+  grid-area: about-heading;
+  text-align: right; 
   border-right: 2px solid;
-  padding-right: 10px;
-  margin-right: 20px;
-  text-align: right;
+  padding-right: 20px;
+  height: auto;
 }
 
-
- #about div{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- }
-
- p{
+#about-content{
+  grid-area: about-content;
   text-align: justify;
-  border: 1px solid;
+  padding: 0 20px;
   height: auto;
- }
+} 
 
- #about div img{
-  margin-left: 10px;
-  width: 75%;
-  height: auto;
- }
-
- /* portfolio container */
- #work{
-  
- }
-
-/* contact container */
-#contact{
+#about-image{
+  grid-area: about-image;
+  background-image: url("../images/profile-photo.jpg");
+  background-size: cover;
+  height:100%;
+  margin-top: 15px;
 }
-    
+
+
+#work{
+  grid-area: work;
+}
+
+#contact{
+  grid-area: contact;
+}
+
+#footer{
+  grid-area: footer;
+}
+
+#work-heading{
+ 
+}
+
+#app-1{
+  grid-area: app-1
+}
+
+#app-2{
+  grid-area: app-2
+}
+
+#app-3{
+  grid-area: app-3
+}
+
+#app-4{
+  grid-area: app-4
+}
+
+#app-5{
+  grid-area: app-5
+}
+
+#contact-heading{
+  grid-area: contact-heading;
+}
+
+#contact-content{
+  
+}
+
+#footer{
+  
+}
