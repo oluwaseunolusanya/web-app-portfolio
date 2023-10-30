@@ -226,3 +226,24 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+/* @media only screen and (max-width: 768px){
+  #app-container{
+    grid-area: app-container;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+      "app-1 "
+      "app-1"
+      "app-1"
+      "app-1"
+      "app-2"
+      "app-3"
+      "app-4"
+      "app-5";
+    padding-left:20px;
+    margin: 20px 0px;
+    gap:10px;
+    padding-bottom: 30px;
+  }
+} */
