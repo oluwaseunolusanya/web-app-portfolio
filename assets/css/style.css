@@ -3,26 +3,41 @@ body {
   padding: 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 5% 20% 20% 40% 10% 5% ;
+  grid-template-areas:
+    "logo-nav"
+    "hero-banner"
+    "about"
+    "work"
+    "contact"
+    "footer";
 }
-  
+
+/* main logo & nav */
 #logo-nav{
+  grid-area: logo-nav;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid;;
 }
-  
-  #logo, #subtitle h2{
+
+#logo, #subtitle h2{
   border: 1px solid;
   padding: 5px 10px;
 }
 
-  #nav-bar a{
+#nav-bar a{
   font-weight:bold;
   padding: 10px;
-  }
+  font-size: large;
+}
 
+/* hero banner */
 #hero-banner{
+  grid-area: hero-banner; 
   border-bottom: 1px solid;
   display: flex;
   justify-content: end;
@@ -34,52 +49,154 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding-right: 10px;
 }
 
-#page-wrapper{
-  display: flex;
-  flex-direction: column;
+/* about me */
+#about{
+  grid-area: about;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "about-heading about-content about-image";
+  /* border:1px solid; */
 }
 
-.page-section{
-  margin: 10px 0;
-  display: flex;
-  border: 1px solid;
-}
-
-.page-section h2{
+#about-heading{
+  grid-area: about-heading;
+  text-align: right; 
   border-right: 2px solid;
-  padding-right: 10px;
-  margin-right: 20px;
-  text-align: right;
+  padding-right: 20px;
+  height: auto;
 }
 
-
- #about div{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- }
-
- p{
+#about-content{
+  grid-area: about-content;
   text-align: justify;
-  border: 1px solid;
+  padding: 0 20px;
   height: auto;
- }
+} 
 
- #about div img{
-  margin-left: 10px;
-  width: 75%;
-  height: auto;
- }
-
- /* portfolio container */
- #work{
-  
- }
-
-/* contact container */
-#contact{
+#about-image{
+  grid-area: about-image;
+  background-image: url("../images/profile-photo.jpg");
+  background-size: cover;
+  height:95%;
+  margin-top: 10px;
+  border-radius: 30px;
 }
-    
+
+/* portfolio */
+#work{
+  grid-area: work;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "work-heading app-container";
+  /* border: 1px solid; */
+}
+
+#work-heading{
+  grid-area: work-heading;
+  text-align: right; 
+  border-right: 2px solid;
+  padding-right: 20px;
+  height: auto;
+}
+
+#app-container{
+  grid-area: app-container;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "app-1 app-1"
+    "app-1 app-1"
+    "app-2 app-3"
+    "app-4 app-5";
+  padding-left:20px;
+  /* border: 1px solid; */
+  margin: 20px 0px;
+}
+
+.app{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.app-title{
+  padding: 0px 5px;
+  /* border: 1px solid; */
+  height:auto;
+}
+
+.app-title h4{
+  margin-bottom: -20px;
+}
+
+#app-1{
+  grid-area: app-1;
+  border: 1px solid;
+}
+
+#app-2{
+  grid-area: app-2;
+  border-left: 1px solid;
+}
+
+#app-3{
+  grid-area: app-3;
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+
+#app-4{
+  grid-area: app-4;
+  border: 1px solid;
+}
+
+#app-5{
+  grid-area: app-5;
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+/* contact */
+#contact{
+  grid-area: contact;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "contact-heading contact-content";
+  /* border: 1px solid; */
+}
+
+#contact-heading{
+  grid-area: contact-heading;
+  text-align: right; 
+  border-right: 2px solid;
+  padding-right: 20px;
+  height: auto;
+}
+
+#contact-content{
+  grid-area: contact-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+  height: auto;
+
+}
+
+/* footer */
+#footer{
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
