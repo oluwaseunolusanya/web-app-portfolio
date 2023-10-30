@@ -5,7 +5,7 @@ body {
   line-height: 1.5;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 5% 20% 20% 40% 10% 5% ;
+  grid-template-rows: 10% 20% 20% 40% 10% 5% ;
   grid-template-areas:
     "logo-nav"
     "hero-banner"
@@ -80,8 +80,8 @@ body {
 #about-image{
   grid-area: about-image;
   background-image: url("../images/profile-photo.jpg");
-  background-size: cover;
-  height:95%;
+  background-size:100% 100%;
+  height:85%;
   margin-top: 10px;
   border-radius: 30px;
 }
