@@ -42,7 +42,7 @@ body {
   display: flex;
   justify-content: end;
   align-items: end;
-  background-image: url("../images/hero-banner.png");
+  background-image: url("../images/placeholder.jpg");
 }
 
 #subtitle{
@@ -128,8 +128,8 @@ body {
 
 .app-title{
   padding: 0px 5px;
-  /* border: 1px solid; */
   height:auto;
+  color: white;
 }
 
 .app-title h4{
@@ -139,22 +139,26 @@ body {
 #app-1{
   grid-area: app-1;
   border: 1px solid;
+  background-image: url("../images/near-miss-app.png");
 }
 
 #app-2{
   grid-area: app-2;
   border-left: 1px solid;
+  background-image: url("../images/seo-horiseon-app.png");
 }
 
 #app-3{
   grid-area: app-3;
   border-right: 1px solid;
   border-left: 1px solid;
+  background-image: url("../images/placeholder.jpg");
 }
 
 #app-4{
   grid-area: app-4;
   border: 1px solid;
+  background-image: url("../images/placeholder.jpg");
 }
 
 #app-5{
@@ -162,6 +166,7 @@ body {
   border-top: 1px solid;
   border-right: 1px solid;
   border-bottom: 1px solid;
+  background-image: url("../images/placeholder.jpg");
 }
 
 /* contact */
