@@ -18,6 +18,9 @@ N/A
 ## Usage
 Navigate to this https://oluwaseunolusanya.github.io/web-app-portfolio/
 
+![image](https://github.com/oluwaseunolusanya/web-app-portfolio/assets/26019734/d37587e2-a349-4e52-aa11-d061a826620f)
+
+
 ## Credits
 Oluwaseun Olusanya
 
